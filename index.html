@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+               dominos
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+         <script type="text/javascript"src="//cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  </head>
+         <body>
+               <header>
+                     
+                        <nav class="navbar navbar-expand-lg bg-body-tertiary p-5">
+                                 <div  class="container-fluid p-5 " >
+                                         <img src="data:image/png;base64,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" alt="dominos" width="30px">
+                                         <div class="logo"> Domino's Pizza </div> 
+                                  </div>
+                                    <button class="navbar-toggler" type="button"data-bs-toggle="collapse"data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon">
+
+                                    </span>
+                                  </button>
+                      
+                                  <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+                                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                               <li class="but m-4 nav-item">
+                                                     <a class="nav-link"href="#">
+                                                          MENU
+                                                     </a> 
+                                               </li>
+                                               <li class="but m-4 nav-item">
+                                                     <a class="nav-link"href="#">
+                                                          STORE
+                                                     </a> 
+                                               </li>
+                                               <li class="but m-4 nav-item">
+                                                     <a class="nav-link"href="#">
+                                                           GIFTCARD
+                                                     </a> 
+                                                </li>
+                                                <li class="but m-4 nav-item">
+                                                      <a class="nav-link"href="#">
+                                                           ENQUIRY
+                                                      </a> 
+                                                </li>
+                                                <li class="but m-4 nav-item">
+                                                       <a class="nav-link"href="#">
+                                                           CONTACT
+                                                       </a> 
+                                                </li> 
+                                        </ul>
+                                  </div>
+                           
+                                  <a href="https://play.google.com/store/apps/details?id=com.Dominos">
+                                       <button class="b p-3">
+                                           DOWNLOAD
+                                       </button>
+                                  </a>
+                   
+                            </nav>
+                    </header>
+
+                     <div> 
+                         <h1>
+                            <div class="row m-2 p-2">
+                                <div class=" column banner-text">
+                                    <h1  class="order-text m-5">DOMINO'S ONLINE ORDERING </h1>
+                                     <p class="description">yummy pizza fast delivery! </p>
+                                     
+                                    <button class="open">
+                                            ORDER ONLINE NOW
+                                    </button>
+                                    <!-- <img src="https://www.dominos.co.in/assets/header_bg.png" width="1020px" alt="img" class="img2" >   -->
+                                    <br><img src="https://www.dominos.co.in/assets/banner_brand_20210922.jpg" width="400px" alt="img" class="img1">
+                                    
+                                </div>
+                            </div>    
+                         </h1> 
+                    </div> 
+
+                   
+                        <p class="home">
+                             <a href="/home">
+                                     Home
+                             </a>
+                       </p>
+                    
+
+                    <h2 class="coupon">
+                         Coupons and Offers
+                    </h2>
+               <!-- carousel -->
+                    <div id="carouselExample" class="carousel slide">
+                     <div class="carousel-inner">
+                       <div class="carousel-item active">
+                             <img src="https://api.dominos.co.in/prod-olo-api/images/amazon_home_20210412.jpg" class="d-block w-100" alt="img1">
+                       </div>
+                       <div class="carousel-item">
+                              <img src="https://api.dominos.co.in/prod-olo-api/images/Home_Paytm_20210519.jpg" class="d-block w-100" alt="img2">
+                       </div>
+                       <div class="carousel-item">
+                             <img src="https://api.dominos.co.in/prod-olo-api/images/Home_airtel_30082020.jpg" class="d-block w-100" alt="img3">
+                       </div>
+                       <div class="carousel-item">
+                             <img src="https://api.dominos.co.in/prod-olo-api/images/Home_Freecharge_20210405.jpg" class="d-block w-100" alt="img4">
+                       </div>
+                       <div class="carousel-item">
+                             <img src="https://api.dominos.co.in/prod-olo-api/images/Dominos_Mobi_Home_20210503.jpg" class="d-block w-100" alt="img5">
+                       </div>
+                       <div class="carousel-item">
+                             <img src="https://api.dominos.co.in/prod-olo-api/images/Home_payzapp_20201029.jpg" class="d-block w-100" alt="img6">
+                       </div>
+                       <div class="carousel-item">
+                             <img src="https://api.dominos.co.in/prod-olo-api/images/Home_au_20201029.jpg" class="d-block w-100" alt="img7">
+                       </div>
+                     </div>
+                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                     </button>
+                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                     </button>
+                   </div>
+                   <div class="card" style="width: 18rem;">
+                     <div class="card-body">
+                         <h2 class="card-title offer">AVAIL YOUR <br>OFFER NOW </h2>
+                         <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                         <a href="#" class="card-link">Card link</a>
+                         <a href="#" class="card-link">Another link</a>
+                     </div>
+                    </div>
+                    <div class="avail-offer"><h1 class="offer">AVAIL YOUR <br>OFFER NOW </h1></div>
+
+                    <h2 class="coupon">
+                        EXPLORE
+                  </h2>
+           
+       <table border="black">
+              <tr>
+                     <th>
+                            <b>
+                                   OUR MENU 
+                            </b>
+                            <br>
+                            explore our range of delicious pizzas
+                     </th>
+                    <th>
+                            <b>
+                                   NEARBY STORE
+                            </b>
+                            <br>
+                            find a domino's pizza resturent near you
+                     </th>
+                     <th>
+                            <b>
+                                   BIRTHDAY PARTY
+                            </b>
+                            <br>
+                            celebrate the joy of birthday with hot and tasty pizza
+                     </th>
+                     <th>
+                            <b>
+                                   CATERING
+                            </b>
+                            <br>
+                            live domino's kitchen in weddingr
+                     </th>
+
+              <tr>  
+                    <td>DISCOVER PIZZA'S</td>
+                    <td>FIND DOMINO'S STORE</td>
+                    <td>BOOK NOW</td>
+                    <td>BOOK NOW</td>
+              </tr>
+       </table>
+
+       <p>
+              <h1 class="foot">
+                     <img src="https://www.dominos.co.in/assets/new_app_img.png" alt="img">
+                     UNLOCK EXCLUSIVE OFFER ON OUR APP
+              </h1>
+       </p>
+
+       <pre>
+              <h2 class="heading">
+    Domino's Pizza: Delivering Happiness
+              </h2>
+       </pre> 
+       <pre>
+              <p class="p">
+    What’s better than having a crispy melty pizza, you ask?
+
+    Having that crispy and melty pizza in the comfort of your own home with the ones you love, we say.
+                
+    With Domino's it is always “Rishton ka time”. Whether it's a treat for your promotion, a kid topping his class or winning the heart of your wife who is too tired to co-
+    ok after a long day at work! A cheesy slice of the best pizza is all one needs to put things into perspective and start any celebration. Plus, you do not even need to r-
+    ush to the restaurant to have one now. A call, a few clicks on our website or a few touches on the mobile screen is all you have to do to have that tempting, light-on-
+    the-pocket pizza at your doorstep.
+                
+    There is something for everyone here. The vegetarians, non-vegetarians, the sides’ lovers and also the ones who love to have something sweet by the time they reach the 
+    last bite of the last slice of pizza slice.
+              </p>
+       </pre> 
+       <pre> 
+              <h2 class="heading">
+    What We Need - More Choice. More Fun.
+              </h2>
+       </pre>
+       <pre>
+              <p class="p">
+    No matter what the situation, pizza always helps. Especially a pizza that gives you the freedom to choose your toppings - from paneer, crisp capsicum, onion, grilled mu
+    shroom, golden corn, black olives, fresh tomato, red paprika, jalapeno, paneer tikka and extra cheese to non-veg toppings such as pepper barbeque chicken, peri-peri chi
+    cken, grilled chicken rasher, chicken sausage or chicken tikka- the options are almost endless, anything and everything you can think of that too on top of the crust of 
+    your choice - New hand-tossed crust, wheat thin crust, cheese burst crust, classic hand-tossed crust or a fresh pan pizza. Because just like a pizza, Domino's understan
+    ds you.
+
+    And to shoo away those end-of-the-month blues while placing your order with our pizza restaurant, check out the everyday pizzas from pizza mania combos with everyday va
+    lue offer of 2 pizzas starting at just ₹99 (regular size) and ₹199 (medium size) each.
+             </p>
+       </pre>
+       <pre>
+              <h2 class="heading">
+    The Promise Of 30-Minute Delivery
+              </h2>
+       </pre>        
+       <pre>
+              <p class="p">
+    The icing on the cake or more aptly the extra cheese on your already fabulous pizza is that Domino’s takes only half an hour for its pizza delivery service. Don’t belie
+    ve us? Time it if you please. With 1250+ stores present all over India, you can have a Domino’s pizza even while traveling on a train. Yes, you are reading it right, yo
+    u can enjoy pizza on train too.
+
+    So stop googling for the “pizza shops near me” and order from your nearest pizza outlet to have a hot box of pizza on your table in the next 30 minutes, or berth at the 
+    next halting station.
+              </p>
+       </pre> 
+       <pre>
+              <h2 class="heading">
+    Franchise Information
+              </h2>
+       </pre>        
+       <pre>
+              <p class="p">
+    Jubilant FoodWorks Limited is the Master Franchisee of Domino’s Pizza in India, Bangladesh, Sri Lanka and Nepal with sole and    exclusive rights to own and operate Dom
+    ino’s Pizza restaurants in these territories. For any franchise-related queries, kindly email us directly at dominos.franchise@jublfood.com
+
+    We have come across a few instances of fraudsters posing as Jubilant FoodWorks and asking for payment from gullible investors against the promise of a Domino’s franchise. 
+    We therefore caution and urge all interested parties to be careful and vigilant and interact only with the email id mentioned above. Anyone dealing with such fraudsters 
+    shall be doing so on their own peril, risk and consequences.
+                
+    Neither Jubilant FoodWorks nor its Directors/Officers shall be responsible for any loss, harm, damage or fraud that occurs or may occur or arise to any person who decid
+    es to access such fake websites, or deal with them.
+              </p>
+       </pre>
+       <br>
+    
+       <span>
+              <p>
+                     <button> 
+                            MENU
+                     </button>
+                     <button> 
+                            CHICKEN PIZZA
+                     </button>
+                     <button>
+                            PIZZA CRUST
+                     </button>
+                     <button>
+                            PIZZA MANIA
+                     </button>
+                     <button>
+                            VEG MARGERITA PIZZA
+                     </button>
+                     <button>
+                            FARMHOUSE PIZZA
+                     </button>
+                     <button>
+                            TRIPPLE CHEEZ PIZZA
+                     </button>
+                     <button>
+                            CHEESE BURST
+                     </button> 
+                     <button>
+                            PANEER ZINGI PARCEL 
+                     </button>
+                     <button>
+                            CHOCO LAVA CAKE
+                     </button>
+                     <button>
+                            CHEESY FRIES
+                     
+                     </button>
+                     <button>
+                            KITKAT MC FLURRY 
+                     </button>
+                     <button>
+                            CLASSIC HAND TOAST PIZZA
+                     </button>
+                     <button>
+                            GOLDEN CORN PIZZA
+                     </button>
+                     <button>
+                            WEDNESDAY OFFER
+                     </button>
+                     <button>
+                            STUFFED GARLIC BREAD
+                     </button>
+                     <button>
+                            BURGER PIZZA
+                     </button>
+                     <button>
+                            DOUBLE CHEESE BURST\
+                     </button>
+                     <button>
+                            FRESH PAN PIZZA
+                     </button>
+                     <button>
+                            RED VELVET CAKE
+                     </button>
+                     <button>
+                            OREO MC FLURRY
+                     </button>
+                     <button>
+                            NEW HAND TOAST PIZZA
+                     </button>
+                     <button>
+                            EXTRA CHEESE PIZZA
+                     </button>
+                     <button>
+                            GARLIC BREAD
+                     </button>
+              </p>
+       </span>
+  </body>    
+</html>
