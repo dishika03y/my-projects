@@ -1,0 +1,8 @@
+.background-shadow-3d{
+    border-radius: 37px;
+/* background: #c1caed;
+box-shadow:  23px 23px 21px #bcbcbc,
+             -23px -23px 21px #ffffff; */
+     box-shadow: 3px 3px 6px 6px rgba(0, 0, 0, 0.32);
+     background-color: #ffffff;
+}

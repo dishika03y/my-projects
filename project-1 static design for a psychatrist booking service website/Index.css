@@ -1,0 +1,51 @@
+/* Navigation */
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.Logo{
+    height:4rem;
+}
+
+.font1-5{
+    font-size: 1.5rem;
+}
+
+.position_relative{
+    position:relative;
+}
+
+.button-background{
+    background-image:linear-gradient(to right, rgba(58, 118, 148, 1) 0%, rgba(8, 8, 61, 1) 100%);
+    color:white;
+    border-radius: 10px;
+}
+
+.centreAlign{
+    text-align: center;
+}
+
+.carousel-control-prev-icon ,.carousel-control-next-icon {
+    background-color: #3A7694;
+    color: black;
+    border-radius: 50%;
+
+}
+
+.position_nav{
+    width:100%;
+
+   /* position:fixed; */
+   z-index: 3;
+}
+
+.background-clr{
+    background-image:linear-gradient(to right, rgba(58, 118, 148, 1) 0%, rgba(8, 8, 61, 1) 100%);
+    color:white;
+}
+.white{
+    /* text-decoration: none; */
+    color:white !important;
+}
+
+ 
+
